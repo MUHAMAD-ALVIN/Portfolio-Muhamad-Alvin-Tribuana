@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌤️ Aplikasi Informasi Cuaca</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>🌤️ Aplikasi Informasi Cuaca</h1>
+
+    <br>
+
+    <p>
+        Aplikasi berbasis web yang dirancang untuk membantu pengguna melihat
+        informasi cuaca berdasarkan kota atau lokasi pengguna. Aplikasi ini
+        menyediakan informasi suhu, kondisi cuaca, kelembapan, kecepatan angin,
+        waktu matahari terbit dan terbenam, serta prakiraan cuaca selama 7 hari.
+        Data cuaca diperoleh secara dinamis menggunakan Open-Meteo API dan
+        fitur lokasi menggunakan Geolocation API.
+    </p>
+
+    <!-- GAMBAR PROJECT -->
+    <img src="{{ url_for('static', filename='images/Tampilan aplikasi web cuaca.png') }}"
+         alt="Gambar Project Weather App"
+         class="project-image">
+
+    <h2>Fitur:</h2>
+
+    <br>
+
+    <ul>
+
+        <li><strong>🔍 Pencarian Kota<br></strong>
+            <p>Mencari informasi cuaca berdasarkan nama kota yang dimasukkan pengguna.</p>
+        </li>
+
+        <br>
+
+        <li><strong>🌡️ Informasi Suhu<br></strong>
+            <p>Menampilkan suhu saat ini berdasarkan lokasi yang dipilih.</p>
+        </li>
+
+        <br>
+
+        <li><strong>☁️ Kondisi Cuaca<br></strong>
+            <p>Menampilkan kondisi cuaca seperti cerah, berawan, hujan, berkabut, dan badai petir.</p>
+        </li>
+
+        <br>
+
+        <li><strong>💧 Kelembapan Udara<br></strong>
+            <p>Menampilkan persentase kelembapan udara pada lokasi yang dipilih.</p>
+        </li>
+
+        <br>
+
+        <li><strong>💨 Kecepatan Angin<br></strong>
+            <p>Menampilkan kecepatan angin berdasarkan data cuaca terkini.</p>
+        </li>
+
+        <br>
+
+        <li><strong>🌅 Sunrise & Sunset<br></strong>
+            <p>Menampilkan waktu matahari terbit dan terbenam berdasarkan lokasi yang dipilih.</p>
+        </li>
+
+        <br>
+
+        <li><strong>📅 Forecast 7 Hari<br></strong>
+            <p>Menampilkan prakiraan cuaca selama 7 hari berupa kondisi cuaca, suhu maksimum, dan suhu minimum.</p>
+        </li>
+
+        <br>
+
+        <li><strong>📍 Gunakan Lokasi Saya<br></strong>
+            <p>Mendeteksi lokasi pengguna melalui browser untuk menampilkan informasi cuaca berdasarkan lokasi saat ini.</p>
+        </li>
+
+        <br>
+
+        <li><strong>🌍 Pencarian Kota Global<br></strong>
+            <p>Mendukung pencarian informasi cuaca dari berbagai kota di berbagai negara.</p>
+        </li>
+
+        <br>
+
+        <li><strong>⚡ Data Cuaca Dinamis<br></strong>
+            <p>Mengambil dan menampilkan data cuaca secara dinamis menggunakan Open-Meteo API.</p>
+        </li>
+
+        <br>
+
+        <li><strong>📱 Desain Responsif<br></strong>
+            <p>Desain yang dapat menyesuaikan tampilan pada berbagai ukuran layar seperti desktop, tablet, dan perangkat mobile.</p>
+        </li>
+
+    </ul>
+
+    <br>
+
+    <a href="/">Kembali ke Portofolio</a>
+
+</body>
+</html>

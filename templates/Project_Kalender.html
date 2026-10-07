@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Kalender</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<h1>📅 Dayflow</h1>
+
+<br>
+
+<p>
+Dayflow adalah aplikasi web manajemen kalender dan penjadwalan interaktif yang dirancang untuk membantu pengguna mengelola agenda harian secara efisien. Aplikasi ini dilengkapi dengan tampilan kalender bulanan & mingguan, sistem deteksi bentrok jadwal (conflict detector), pencarian & filter meeting, manajemen availability, serta fitur ekspor data (.ics, .csv, .json). Dikembangkan menggunakan HTML5, CSS3, dan Modern JavaScript (ES6+) dengan penyimpanan data lokal (LocalStorage).
+</p>
+
+<!-- GAMBAR PROJECT -->
+    <img src="{{ url_for('static', filename='images/Tampilan website kalender.png') }}"
+         alt="Gambar Project Kalender"
+         class="project-image">
+
+<h2>Fitur:</h2>
+
+<br>
+
+<ul>
+    <li><strong>🔍 Pencarian & Filter Event<br></strong>
+    <p>Mencari event atau meeting secara cepat berdasarkan kata kunci judul, kategori (Work, Personal, Project), serta status (Upcoming / Cancelled).</p>
+    </li>
+
+    <br>
+    
+    <li><strong>⚠️ Conflict Detector (Validasi Bentrok)<br></strong>
+    <p>Mendeteksi tumpang tindih jadwal secara real-time saat menambahkan event atau booking baru untuk mencegah pendaftaran jadwal ganda.</p>
+    </li>
+
+    <br>
+    
+    <li><strong>📆 Multi-View Calendar (Month & Week View)<br></strong>
+    <p>Fleksibilitas mengubah tampilan kalender antara Tampilan Bulanan (Month View) dan Tampilan Mingguan (Week View) lengkap dengan slot jam (08:00 - 17:00).</p>
+    </li>
+
+    <br>
+    
+    <li><strong>📥 Ekspor & Backup Data<br></strong>
+    <p>Mendukung unduh data jadwal individu ke format .ics (Google/Apple Calendar), rekap daftar meeting ke .csv (Excel), dan backup seluruh data ke .json.</p>
+    </li>
+
+    <br>
+    
+    <li><strong>🔔 Toast Notification Alert<br></strong>
+    <p>Umpan balik visual interaktif (success, danger, info) untuk setiap aksi pengguna, seperti menyimpan agenda, membatalkan meeting, atau notifikasi bentrok.</p>
+    </li>
+
+    <br>
+
+    <li><strong>⏱️ Sistem Booking & Availability<br></strong>
+    <p>Pengaturan slot hari dan jam kerja interaktif yang memungkinkan pengguna lain melakukan pemesanan jadwal (booking) tanpa tumpang tindih.</p>
+    </li>
+
+    <br>
+
+    <li><strong>📊 Real-Time Dashboard Stats<br></strong>
+    <p>Menampilkan ringkasan statistik secara langsung, mulai dari total event, jumlah meeting mendatang, durasi jam terpakai (booked hours), hingga next meeting indicator.</p>
+    </li>
+
+    <br>
+
+    <li><strong>🔗 Copy Booking Link<br></strong>
+    <p>Kemudahan menyalin tautan reservasi ke clipboard untuk dibagikan kepada klien atau rekan kerja.</p>
+    </li>
+
+    <br>
+
+    <li><strong>💾 Local Persistence (LocalStorage)<br></strong>
+    <p>Seluruh data event, meeting, dan pengaturan availability tersimpan secara otomatis di penyimpanan lokal browser.</p>
+    </li>
+
+    <br>
+
+    <li><strong>📱 Desain Responsif & Modern UI<br></strong>
+    <p>Antarmuka bersih (clean UI) yang nyaman digunakan dan responsif di berbagai perangkat desktop maupun ponsel.</p>
+    </li>
+
+    <br>
+
+    <li><strong>🏷️ Kategori & Kode Warna Custom<br></strong>
+    <p>Pengelompokan jadwal berdasarkan jenis (Work, Personal, Project, Meeting) dengan penanda warna visual yang berbeda untuk memudahkan pemetaan agenda.</p>
+    </li>
+
+    <br>
+
+    <li><strong>⏰ Pengaturan Durasi & Jam Event<br></strong>
+    <p>Fleksibilitas menentukan jam mulai, jam selesai, serta estimasi durasi meeting secara akurat hingga skala menit.</p>
+    </li>
+
+    <br>
+
+    <li><strong>📝 Catatan Tambahan & Link Meeting<br></strong>
+    <p>Menyediakan kolom deskripsi agenda dan tautan rapat daring (Google Meet, Zoom, atau Teams) yang dapat diakses langsung dari kalender.</p>
+    </li>
+
+    <br>
+
+    <li><strong>🔄 Navigasi Waktu & Quick Today<br></strong>
+    <p>Tombol navigasi intuitif (Next / Previous) untuk berpindah bulan atau minggu dengan cepat, serta tombol Today untuk kembali ke tanggal hari ini secara instan.</p>
+    </li>
+
+    <br>
+
+    <li><strong>🛠️ Manajemen Status Meeting<br></strong>
+    <p>Kemudahan dalam mengubah status rapat, membatalkan (Cancelled), atau menghapus agenda tanpa kehilangan riwayat data pencatatan.</p>
+    </li>
+
+</ul>
+
+    <br>
+
+<a href="/">Kembali ke Portofolio</a>
+
+</body>
+</html>

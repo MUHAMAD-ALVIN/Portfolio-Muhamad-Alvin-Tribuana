@@ -27,6 +27,14 @@ def project_todo():
 def landing():
     return render_template("Project_Landing Page.html")
 
+@app.route("/project/kalender")
+def project_kalender():
+    return render_template("Project_Kalender.html")
+
+@app.route("/project/weather")
+def project_weather():
+    return render_template("Project_Weather App.html")
+
 
 if __name__ == "__main__":
     app.run(debug=True)
